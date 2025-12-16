@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NobleRide | Best Car & Bike Rentals</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="nr-header">
+    <div class="logo">Noble<span>Ride</span></div>
+    <nav class="nr-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="cars.html">Cars</a>
+      <a href="bikes.html">Bikes</a>
+      <a href="contact.html">Contact</a>
+      <a href="help.html">Help</a>
+      <a href="backend/my_rides.php">My Rides</a>
+      <a href="login.html">Login</a>
+      <a href="register.html" class="btn-gold">Register</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Self-Drive Car &amp; Bike Rentals</p>
+      <h1>Ride with confidence. <span>Any city.</span> Any time.</h1>
+      <p class="lead">
+        <br>
+        NobleRide connects you with a curated fleet of Best cars and smart bikes.
+        Book online in a few clicks and hit the road with complete peace of mind.
+      </p>
+      <div class="hero-actions">
+        <a href="cars.html" class="btn-primary"> Cars</a>
+        <a href="bikes.html" class="btn-primary"> Bikes</a>
+      </div>
+      <div class="hero-badges">
+        <div>✔ Sanitized fleet</div>
+        <div>✔ 24×7 roadside support</div>
+        <div>✔ Instant confirmation</div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h2>Quick Booking Search</h2>
+      <form class="booking-form" onsubmit="handleSearch(event)">
+        <br>
+        <label>
+          Pick-up City
+          <input type="text" id="search-city" placeholder="e.g. Pune" />
+        </label>
+        <label>
+          Vehicle Type
+          <select id="search-type">
+            <option value="all">Car &amp; Bike</option>
+            <option value="car">Car only</option>
+            <option value="bike">Bike only</option>
+          </select>
+        </label>
+        <button class="btn-primary full">Search Vehicles</button>
+        <p class="small muted"></p>
+      </form>
+    </div>
+  </main>
+
+  <section class="cards-section" id="search-results-section" style="display:none;">
+    <h2 class="center" id="search-title">Search Results</h2>
+    <div class="card-grid" id="search-results"></div>
+  </section>
+
+  <section class="cards-section">
+    <h2 class="center">Top Picks This Week</h2>
+    <div class="card-grid" id="featured-list"></div>
+  </section>
+
+  <footer class="nr-footer">
+    <p>© <span id="year"></span> NobleRide. Safe journeys start here.</p>
+  </footer>
+</body>
+</html>

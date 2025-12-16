@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us | NobleRide</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="nr-header">
+    <div class="logo">Noble<span>Ride</span></div>
+    <nav class="nr-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="cars.html">Cars</a>
+      <a href="bikes.html">Bikes</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="help.html">Help</a>
+      <a href="backend/my_rides.php">My Rides</a>
+      <a href="login.html">Login</a>
+      <a href="register.html" class="btn-gold">Register</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h1>Contact NobleRide</h1>
+    <p class="lead">
+      Have a question about a vehicle or booking? Our rental team is happy to help.
+    </p>
+
+    <div class="two-column">
+      <form class="nr-form">
+        <label>Full Name
+          <input type="text" placeholder="Your name" required />
+        </label>
+        <label>Email
+          <input type="email" placeholder="you@example.com" required />
+        </label>
+        <label>Vehicle Type
+          <select>
+            <option>Car</option>
+            <option>Bike</option>
+            <option>Both / Not sure</option>
+          </select>
+        </label>
+        <label>Message about your ride
+          <textarea rows="4" placeholder="Dates, city, vehicle preference..."></textarea>
+        </label>
+        <button class="btn-primary full" type="submit">Send Message</button>
+        
+      </form>
+
+      <div>
+        <h2>Rental Support</h2>
+        <p><strong>Customer Care:</strong> +91-98765-12345</p>
+        <p><strong>Booking Email:</strong> bookings@nobleride.com</p>
+        <p><strong>Support Email:</strong> support@nobleride.com</p>
+        <p class="small muted" style="margin-top:.6rem;">
+          Working hours: 12:00 AM – 12:00 PM all days.<br>
+          Roadside assistance is available 24×7 for active rides.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="nr-footer">
+    <p>© <span id="year"></span> NobleRide.  Safe journeys start here.</p>
+  </footer>
+</body>
+</html>

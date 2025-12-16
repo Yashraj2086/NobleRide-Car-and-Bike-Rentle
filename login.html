@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | NobleRide</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="nr-header">
+    <div class="logo">Noble<span>Ride</span></div>
+    <nav class="nr-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="cars.html">Cars</a>
+      <a href="bikes.html">Bikes</a>
+      <a href="contact.html">Contact</a>
+      <a href="help.html">Help</a>
+      <a href="backend/my_rides.php">My Rides</a>
+      <a href="login.html" class="active">Login</a>
+      <a href="register.html" class="btn-gold">Register</a>
+    </nav>
+  </header>
+
+  <main class="page center">
+    <div class="auth-card">
+      <h1>Login</h1>
+      
+    
+      <form class="nr-form" method="post" action="backend/login.php">
+        <label>Emails
+          <input type="email" name="email" required />
+        </label>
+        <label>Password
+          <input type="password" name="password" required />
+        </label>
+        <button class="btn-primary full" type="submit">Login</button>
+      </form>
+      <p class="small" style="margin-top:.7rem;">
+        New here? <a href="register.html">Create an account</a>.
+      </p>
+    </div>
+  </main>
+
+  <footer class="nr-footer">
+    <p>© <span id="year"></span> NobleRide.  Safe journeys start here.</p>
+  </footer>
+</body>
+</html>
